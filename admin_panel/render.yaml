@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: aube1g-admin-panel
+    env: python
+    rootDir: admin_panel
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn admin_panel:app"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.6
