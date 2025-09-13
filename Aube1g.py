@@ -54,7 +54,7 @@ def main_keyboard():
     ])
 
 def admin_keyboard():
-    WEB_APP_URL = "https://your-app-is-not-deployed-yet.com" # <-- ЗАМЕНИМ ПОЗЖЕ
+    WEB_APP_URL = "https://aube1g-admin-panel.onrender.com" # <-- ЗАМЕНИМ ПОЗЖЕ
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("👁️ Открыть веб-панель", web_app=WebAppInfo(url=WEB_APP_URL))],
         [InlineKeyboardButton("📢 Оповещение", callback_data="admin_broadcast")]
